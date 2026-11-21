@@ -17,8 +17,8 @@
 (defn- env [name default] (or (System/getenv name) default))
 
 (def common-config
-  {:repo (env "RECAP_REPO_DID" "did:web:recap.etzhayyim.com")
-   :owner (env "RECAP_OWNER_DID" "did:web:recap.etzhayyim.com")})
+  {:repo (env "RECAP_REPO_DID" "did:web:recap.itonami.app")
+   :owner (env "RECAP_OWNER_DID" "did:web:recap.itonami.app")})
 
 (def download-config
   (merge common-config

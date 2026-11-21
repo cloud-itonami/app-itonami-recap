@@ -1,4 +1,4 @@
-// recap.etzhayyim.com — multi-platform media download agent (research/education).
+// recap.itonami.app — multi-platform media download agent (research/education).
 // L3 thin edge dispatcher: forwards XRPC to lg-recap LangGraph server.
 // Policy: fair-use only (research/authorized scope). Arbitrary public download prohibited.
 
