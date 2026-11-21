@@ -5,8 +5,8 @@
 | Key | Value |
 |---|---|
 | **nanoid** | `r3c4p001` |
-| **domain** | `recap.etzhayyim.com` |
-| **AT bot DID** | `did:web:recap.etzhayyim.com` |
+| **domain** | `recap.itonami.app` |
+| **AT bot DID** | `did:web:recap.itonami.app` |
 | **Runtime** | CF Worker (L3 dispatcher) → LangGraph Server pod (L8) |
 | **Scope** | **社内研究・教育用途 (fair-use only)** — arbitrary public download は禁止 |
 | **Backend** | `lg-recap` FastAPI + LangGraph (同 lg-animeka パターン) |
@@ -20,7 +20,7 @@ YouTube · TikTok · Instagram Reels · Twitter/X · NicoNico · Bilibili · Vim
 ```
 User / yoro MCP Tool
   → XRPC com.etzhayyim.apps.recap.{download,getInfo,listDownloads}
-    → CF Worker (recap.etzhayyim.com) — L3 thin dispatcher
+    → CF Worker (recap.itonami.app) — L3 thin dispatcher
       → DISPATCHER_URL = http://lg-recap:8000/xrpc/{nsid}
         → LangGraph FastAPI server (lg-recap pod, mitama-udf namespace)
           → download graph: validate_url → get_metadata → select_format

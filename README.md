@@ -54,3 +54,12 @@ amu compile --target wasm32-browser app     # -> cljs/public/js/
 Output is a single-page static build (`cljs/public/index.html` + `js/`) —
 there is no worker script (`wrangler.jsonc` has no `main`); Cloudflare serves
 `cljs/public` directly as static assets.
+
+## Divergence from upstream (2026-11-21, JUN-1410)
+
+The owner decided to unify the domains under `itonami.app`, so the wrangler routes and the
+`did:web` identifier moved from `etzhayyim.com` to `itonami.app`. This app is not deployed and the old
+identifier never resolved. The new hosts (`r3c4p001.itonami.app`, `recap.itonami.app`) resolve through the `itonami.app`
+wildcard record but answer 522, because no Worker is bound (measured 2026-11-21).
+
+Unchanged: other services' hostnames, the lexicon namespace, and `docs/adr/` (the record of that time).

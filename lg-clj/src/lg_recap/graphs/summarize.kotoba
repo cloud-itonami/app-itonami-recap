@@ -25,8 +25,8 @@
 (def transcript-chunk-chars 6000)
 (def summary-max-tokens 800)
 
-(def default-config {:repo "did:web:recap.etzhayyim.com"
-                     :owner "did:web:recap.etzhayyim.com"
+(def default-config {:repo "did:web:recap.itonami.app"
+                     :owner "did:web:recap.itonami.app"
                      :llm-url "http://127.0.0.1:4000/v1"
                      :llm-model "gemma3:4b"
                      :llm-timeout-sec 120.0})

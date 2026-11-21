@@ -29,8 +29,8 @@
 
 (def allowed-scopes #{"research" "authorized"})
 
-(def default-config {:repo "did:web:recap.etzhayyim.com"
-                     :owner "did:web:recap.etzhayyim.com"
+(def default-config {:repo "did:web:recap.itonami.app"
+                     :owner "did:web:recap.itonami.app"
                      :default-org-did "anon"
                      :cookies-file ""
                      :upload-enabled? false})

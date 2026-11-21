@@ -261,7 +261,7 @@
             (str "kotodama-" manifest-nanoid) (get wrangler "name")
             "wrangler name")
     (check "a-route-is-served-at-the-nanoid-host"
-           (contains? wrangler-hosts (str manifest-nanoid ".etzhayyim.com"))
+           (contains? wrangler-hosts (str manifest-nanoid ".itonami.app"))
            (str "wrangler route hosts = " (show wrangler-hosts))))
 
   ;; --- agreement: the deployment vars are a hand copy of the manifest profile
